@@ -1,5 +1,5 @@
 'use client'
-import { useLang } from '@/app/hooks/useLang'
+import { useLang } from '@/hooks/useLang'
 import Logo from '../../elements/Logo/Logo'
 import Link from 'next/link'
 
@@ -8,6 +8,7 @@ const Header = () => {
 
   return (
     <header className='header'>
+      <h2>This is header</h2>
       <div className='container header__container'>
         <button className='btn-reset header__burger'>
           {translations[lang].header.menu_btn}

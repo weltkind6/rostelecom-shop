@@ -1,5 +1,5 @@
 import { createDomain } from 'effector'
-import { AllowedLangs } from '../constans/lang'
+import { AllowedLangs } from '../constants/lang'
 
 const lang = createDomain()
 
