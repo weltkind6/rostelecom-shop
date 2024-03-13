@@ -210,7 +210,7 @@
 .nav-menu__accordion__item:first-child .nav-menu__accordion__item__title::before {
   content: '';
   position: absolute;
-  background-image: url(/img/menu-line.svg);
+  background-image: url(/img/line.svg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 224px;
