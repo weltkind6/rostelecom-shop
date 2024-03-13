@@ -123,11 +123,7 @@ const Menu = () => {
         <div className={`nav-menu__logo ${menuIsOpen ? 'open' : ''}`}>
           <Logo />
         </div>
-        <img
-          className={`nav-menu__bg ${menuIsOpen ? 'open' : ''}`}
-          src={`/img/menu-bg${isMedia800 ? '-small' : ''}.png`}
-          alt='menu background'
-        />
+
         <button
           className={`btn-reset nav-menu__close ${menuIsOpen ? 'open' : ''}`}
           onClick={handleCloseMenu}
