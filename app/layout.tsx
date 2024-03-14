@@ -4,6 +4,8 @@ import './globalStyles/header.css'
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
 import './globalStyles/menu.css'
+import './globalStyles/mobile-navbar.css'
+import './globalStyles/catalog-menu.css'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
