@@ -3,16 +3,11 @@ import { useLang } from '@/hooks/useLang'
 import Logo from '../../elements/Logo/Logo'
 import Link from 'next/link'
 import Menu from './Menu'
-import { $searchModal, openMenu, openSearchModal } from '@/context/modals'
-import {
-  addOverFlowHiddenToBody,
-  handleCloseSearchModal,
-} from '@/lib/utils/common'
-import { useUnit } from 'effector-react'
+import { openMenu, openSearchModal } from '@/context/modals'
+import { addOverFlowHiddenToBody } from '@/lib/utils/common'
 
 const Header = () => {
   const { lang, translations } = useLang()
-  const searchModal = useUnit($searchModal)
 
   const handleOpenMenu = () => {
     addOverFlowHiddenToBody()
@@ -26,10 +21,6 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div
-        onClick={handleCloseSearchModal}
-        className={`header__search-overlay ${searchModal ? 'overlay-active' : ''}`}
-      />
       <div className='container header__container'>
         <button className='btn-reset header__burger' onClick={handleOpenMenu}>
           {translations[lang].header.menu_btn}

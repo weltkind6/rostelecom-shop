@@ -5,6 +5,22 @@ import React from 'react'
 const SearchModal = () => {
   const { lang, translations } = useLang()
 
+  const handleInputFocus = (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>
+  ) => {
+    e.target.classList.add('with_value')
+  }
+
+  const handleInputBlur = (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>
+  ) => {
+    if (e.target.value) {
+      return
+    }
+
+    e.target.classList.remove('with_value')
+  }
+
   return (
     <div className='search-modal'>
       <button
@@ -16,13 +32,17 @@ const SearchModal = () => {
       </h3>
       <div className='search-modal__top'>
         <label className='search-modal__label'>
-          <input type='text' className='search-modal__input' />
+          <input
+            type='text'
+            className='search-modal__input'
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+          />
           <span className='search-modal__floating_label'>
             {translations[lang].header.search_infos}
           </span>
         </label>
       </div>
-      fdg
     </div>
   )
 }

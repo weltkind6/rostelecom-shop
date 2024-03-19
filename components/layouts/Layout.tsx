@@ -6,6 +6,7 @@ import { useUnit } from 'effector-react'
 import { $searchModal } from '@/context/modals'
 import { motion } from 'framer-motion'
 import SearchModal from '../modules/Header/SearchModal'
+import { handleCloseSearchModal } from '@/lib/utils/common'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -29,6 +30,10 @@ const Layout = ({ children }: LayoutProps) => {
           <SearchModal />
         </motion.div>
       )}
+      <div
+        onClick={handleCloseSearchModal}
+        className={`header__search-overlay ${searchModal ? 'overlay-active' : ''}`}
+      />
     </>
   )
 }
