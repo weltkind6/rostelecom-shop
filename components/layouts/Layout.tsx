@@ -7,6 +7,7 @@ import { $searchModal } from '@/context/modals'
 import { motion } from 'framer-motion'
 import SearchModal from '../modules/Header/SearchModal'
 import { handleCloseSearchModal } from '@/lib/utils/common'
+import Footer from '../modules/Footer/Footer'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -34,6 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
         onClick={handleCloseSearchModal}
         className={`header__search-overlay ${searchModal ? 'overlay-active' : ''}`}
       />
+      <Footer />
     </>
   )
 }
