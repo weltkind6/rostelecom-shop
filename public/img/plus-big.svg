@@ -1,0 +1,28 @@
+<svg width="87.000000" height="98.000000" viewBox="0 0 87 98" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1789_7840_dd" x="-0.200195" y="-0.200012" width="86.400391" height="97.920044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="11.52"/>
+			<feGaussianBlur stdDeviation="6.4"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="0"/>
+			<feGaussianBlur stdDeviation="6.4"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+			<feBlend mode="normal" in2="effect_dropShadow_1" result="effect_dropShadow_2"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_2" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1789_7840_dd)">
+		<circle id="Ellipse 141" cx="43.000000" cy="43.000000" r="23.250000" stroke="#7700FF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<circle id="Ellipse 142" cx="43.000000" cy="43.000000" r="19.000000" fill="#7700FF" fill-opacity="1.000000"/>
+		<path id="Union" d="M42.25 43.75L42.25 52L43.75 52L43.75 43.75L52 43.75L52 42.25L43.75 42.25L43.75 34L42.25 34L42.25 42.25L34 42.25L34 43.75L42.25 43.75Z" fill="#E8E9EA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
