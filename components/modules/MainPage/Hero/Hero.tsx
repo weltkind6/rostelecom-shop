@@ -11,6 +11,8 @@ import img3 from '@/public/img/violet-t.png'
 import HeroSlide from './HeroSlide'
 import styles from '@/styles/main-page/index.module.scss'
 import stylesForAd from '@/styles/ad/index.module.css'
+import Image from 'next/image'
+import infoIcon from '@/public/img/icons/info-icon.svg'
 
 const Hero = () => {
   const { lang, translations } = useLang()
@@ -41,7 +43,16 @@ const Hero = () => {
         {translations[lang].main_page.hero_hidden_title}
       </h1>
       <div className={`container ${styles.hero__container}`}>
-        <span className={stylesForAd.ad}>{translations[lang].common.ad}</span>
+        <div className={stylesForAd.ad}>
+          {translations[lang].common.ad}
+          <Image
+            src={infoIcon}
+            alt='info'
+            width='20'
+            height='20'
+            className={stylesForAd.img}
+          />
+        </div>
         <Swiper
           className={styles.hero__slider}
           effect='coverflow'
